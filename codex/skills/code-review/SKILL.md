@@ -90,6 +90,16 @@ Mention strong decisions if relevant.
 
 ## Rules
 
+- Report actionable issues introduced by the reviewed changes.
+  For each issue, identify the location, triggering conditions,
+  and concrete impact. Check relevant surrounding code and callers
+  before concluding that behavior is broken.
+- Separate confirmed defects from concerns that need verification.
+  State what evidence is missing for an unverified concern.
+- Do not report stylistic preferences or hypothetical improvements
+  as defects unless they violate an explicit project requirement.
+- Omit empty severity sections. If no actionable issues are found,
+  say so without inventing findings.
 - Do not rewrite the whole solution unless asked.
 - Prefer precise comments tied to specific files or code fragments.
 - Explain why each issue matters.
